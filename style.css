@@ -71,3 +71,81 @@ img {
 .clear {
   clear: both;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 419px){
+
+  /* RESET */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* COMMON */
+  body {
+    font-size: 0.7em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+
+  img {
+    height: 70px;
+  }
+
+  /* BLOCCO LEZIONI */
+  .row,
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    margin-top: 0;
+    padding: 5px;
+  }
+
+  #lezioni,
+  #why {
+    background-color: #F2F2CD;
+  }
+
+  /*BLOCCO STEPS */
+  #steps {
+    background-color: white;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    padding: 5px;
+  }
+
+  /* BLOCCO WHY */
+
+  .first,
+  .second,
+  .third {
+    width: 100%;
+    padding: 5px;
+  }
+
+  #why .row img {
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 0;
+  }
+
+  hr {
+    border-top-color: black;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
