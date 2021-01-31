@@ -72,15 +72,56 @@ img {
   clear: both;
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 419px){
-
+/* RESPONSIVE  min 420px max 729px*/
+@media screen and (max-width: 729px){
   /* RESET */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  /* general */
+  img {
+    height: 120px;
+  }
+
+  #lezioni,
+  #why {
+    background-color: #F2F2CD;
+  }
+
+  .row {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px 0;
+  }
+
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central {
+    width: 50%;
+    padding: 10px;
+  }
+
+  #steps .row>.right {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 25%;
+  }
+
+  /* BLOCCO WHY */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+}
+
+/* RESPONSIVE  max 419px*/
+@media screen and (max-width: 419px){
 
   /* COMMON */
   body {
@@ -104,11 +145,6 @@ img {
     width: 100%;
     margin-top: 0;
     padding: 5px;
-  }
-
-  #lezioni,
-  #why {
-    background-color: #F2F2CD;
   }
 
   /*BLOCCO STEPS */
